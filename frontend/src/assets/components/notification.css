@@ -1,0 +1,18 @@
+.resend-success {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+    animation: fadeOut 1s ease 9s forwards; /* Animation duration: 1 second, delay: 9 seconds */
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; } /* Start with full opacity */
+    100% { opacity: 0; } /* End with no opacity */
+}
