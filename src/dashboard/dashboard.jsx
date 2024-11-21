@@ -1,4 +1,4 @@
-import DashHeader from "./dashHeader.jsx"
+import DashHeader from "./dashHeader.jsx";
 import {
   Grid,
   useMediaQuery,
@@ -8,15 +8,31 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
+  const navigate = useNavigate();
+  function handleElections() {
+    navigate("/allElections");
+  }
   return (
     <>
+      <Box>
+        <DashHeader />
+        <Box sx={{ marginLeft: "20px", marginTop: "40px" }}>
+          <Typography
+            sx={{ fontWeight: "bold", fontSize: "25px", color: "#41675C" }}
+          >
+            {" "}
+            Welcome Mr. X
+          </Typography>
+        </Box>
+      </Box>
       <Grid
         sx={{
           display: "flex",
           //alignItems: "center",
-          marginTop: "12rem",
+          marginTop: "7.6rem",
           gap: "25px",
           marginLeft: "16.5rem",
         }}
@@ -30,6 +46,7 @@ function Dashboard() {
             height: "200px",
             backgroundColor: "#fff",
           }}
+          onClick={handleElections}
         >
           {" "}
           <Typography
