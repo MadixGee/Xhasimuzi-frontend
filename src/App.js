@@ -1,14 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import SignUp from './SignUp/SignUp.jsx'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
+import Dashboard from './dashboard/dashboard.jsx';
+
 
 
 function App() {
   return (
     <>
+
       <BrowserRouter>
-      <SignUp/>
+      
+      <Routes>
+      <Route path="/" element={<SignUp />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    
+   
+    </Routes>
       </BrowserRouter>
     </>
   );
