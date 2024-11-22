@@ -68,6 +68,7 @@ function DashHeader() {
       </Box>
       <Box sx={{ marginRight: "20px" }}>
         <FontAwesomeIcon
+          onClick={handleBackHome}
           icon={faCircleUser}
           style={{
             color: "#41675c",

@@ -6,6 +6,7 @@ import Dashboard from './dashboard/dashboard.jsx';
 import Elections from './Elections/Elections.jsx';
 import AllElections from './Elections/allElections.jsx';
 import Update from './updateParty/update.jsx';
+import Vote from './Elections/addVote.jsx';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path="/elections" element={<Elections />} />
       <Route path="/allElections" element={<AllElections />} />
       <Route path="/update" element={<Update />} />
+      <Route path="/addVote" element={<Vote />} />
 
     </Routes>
       </BrowserRouter>

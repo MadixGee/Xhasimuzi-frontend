@@ -105,7 +105,7 @@ function Elections() {
           Please fill in the following details
         </Typography>
 
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           <Grid item xs={6}>
             <Box
               sx={{
@@ -127,10 +127,10 @@ function Elections() {
               </Box>
               <Box
                 sx={{
-                  marginTop: "1rem",
-                  margin: "0 auto",
-                  border: "1px solid #DD7D32",
-                  padding: "15px",
+                  width: "100%", // Ensure it takes the full width of its parent container
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", // Dynamic columns
+                  gap: "1rem", // Add spacing between cards
                 }}
               >
                 <FormControl
@@ -433,7 +433,7 @@ function Elections() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          {/* <Grid item xs={6}>
             {" "}
             <Box
               sx={{
@@ -494,7 +494,7 @@ function Elections() {
               </Box>
               <Box sx={{ border: " 1px solid #F07402" }}></Box>
             </Box>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
     </>
