@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
       
       <Routes>
-      <Route path="/" element={<SignUp />} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/elections" element={<Elections />} />
       <Route path="/allElections" element={<AllElections />} />
