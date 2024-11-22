@@ -76,6 +76,16 @@ function AllElections() {
           padding: "0.25rem",
         }}
       >
+        <Typography
+          sx={{
+            fontWeight: "bold",
+            color: " #41675C",
+            fontSize: "35px",
+            marginBottom: "25px",
+          }}
+        >
+          Welcome Back Mrs. Jane Doe
+        </Typography>
         <Box
           sx={{
             border: "1px solid  #F07402",

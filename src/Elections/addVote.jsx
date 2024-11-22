@@ -58,7 +58,7 @@ function Vote() {
               icon={faCircleChevronLeft}
               style={{ color: "#41675c", fontSize: "25px" }}
               onClick={() => {
-                navigate("/allElections");
+                navigate("/landingPage");
               }}
             />
             <Typography variant="body1">Back</Typography>

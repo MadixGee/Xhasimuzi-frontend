@@ -37,7 +37,7 @@ function DashHeader() {
   const [logOutModal, setLoggedOutModal] = useState(false);
 
   function handleBackHome() {
-    navigate("/dashboard");
+    navigate("/landingPage");
   }
 
   return (
@@ -58,6 +58,7 @@ function DashHeader() {
           Politec
         </Typography>
         <FontAwesomeIcon
+          onClick={handleBackHome}
           icon={faHouse}
           style={{
             color: "#41675c",
@@ -68,7 +69,6 @@ function DashHeader() {
       </Box>
       <Box sx={{ marginRight: "20px" }}>
         <FontAwesomeIcon
-          onClick={handleBackHome}
           icon={faCircleUser}
           style={{
             color: "#41675c",
